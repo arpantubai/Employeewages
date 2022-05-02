@@ -12,3 +12,10 @@ then
 else
         echo "Present"
 fi
+
+#UC2
+Wage_Per_Hr=20
+Full_Day_Hr=8
+
+dailyWage=$(( $Wage_Per_Hr * $Full_Day_Hr ))
+echo "Daily Employee Wage :" $dailyWage
