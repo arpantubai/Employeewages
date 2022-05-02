@@ -26,3 +26,14 @@ Part_Time_Hr=4
 partTimeWage=$(( $Part_Time_Hr * $Wage_Per_Hr ))
 echo "Part time wage of an employee :" $partTimeWage
 
+#UC4
+
+Choice=$((1+$RANDOM%2))
+case $Choice in
+        1)Emp_Hr=8;;
+        2)Emp_Hr=4;;
+        *)
+esac
+
+Daily_Wage=$(( $Emp_Hr * $Wage_Per_Hr ))
+echo "Daily wage using switch case :" $Daily_Wage
